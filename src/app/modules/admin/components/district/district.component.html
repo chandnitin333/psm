@@ -1,14 +1,9 @@
 <div *ngIf="isLoading">
     <app-skeleton-loader></app-skeleton-loader>
-  </div>
-  <div *ngIf="!isLoading">
-    <!-- Your actual content goes here -->
-    <div *ngFor="let item of district">
-      {{ item.name }}
-    </div>
-  </div>
+</div>
 
-<!-- <div class="card card-default">
+
+<div class="card card-default" *ngIf="!isLoading">
     <div class="card-header card-header-nk">
         <h2 class="card-header-label"><strong>जिल्हा</strong></h2>
     </div>
@@ -27,7 +22,7 @@
         </form>
     </div>
 </div>
-<div class="card card-default">
+<div class="card card-default" *ngIf="!isLoading">
     <div class="card-body">
         <form action="#" method="get">
             <div class="col-md-4" id="input-group-search">
@@ -96,4 +91,4 @@
             </ul>
         </nav>
     </div>
-</div> -->
+</div>
